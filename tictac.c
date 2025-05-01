@@ -74,10 +74,10 @@ void playerMove() {
 
     do {
         printf("Enter row number (1-3): ");
-        scanf("%d", &x);
+        scanf_s("%d", &x);
         x--;
         printf("Enter column number (1-3): ");
-        scanf("%d", &y);
+        scanf_s("%d", &y);
         y--;
 
         if (x < 0 || x >= SIZE || y < 0 || y >= SIZE || board[x][y] != ' ') {
